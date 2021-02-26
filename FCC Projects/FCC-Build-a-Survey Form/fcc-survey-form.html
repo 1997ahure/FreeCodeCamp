@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNIVERSITY FEEDBACK SURVEY</title>
+</head>
+<body class="container" >
+    <h1 class="text-center" id="title"><strong>UNIVERSITY SURVEY</strong></h1>
+    <P id="description" class="text-center"> We want to see your reviewsand also your solutions about some problems and strong 
+        points of the school
+    </P>
+    <link href="C:\Users\surface\Documents\FCC Projects\FCC-Build-a-Survey Form\fcc-survey.css" rel= "stylesheet" type="text/css">
+    <main >
+    <form action="" id="survey-form">
+        <div class="form-group">
+                   <label for="name" id="name-label">NAME</label>
+            <input
+             type="text" id="name"
+              placeholder="Surname First Name" class="form-control" name="Name" required><br>
+        </div>  
+
+        <div class="form-group">
+        <label for="email" id="email-label">EMAIL</label>
+        <input type="email" id="email" placeholder="e.g johnterry@example.com" class="form-control"name="email" required><br>
+        </div>
+
+        <div class="form-group">
+        <label for="number" id="number-label">AGE <span class="clue">(OPTIONAL)</span></label>
+        <input type="number" id="number" placeholder="Age" class="form-control" name="number" min="1" max="99"><br>
+        </div>
+
+        <div class="form-group">
+        <label for="phone-number">PHONE NUMBER</label>
+        <input type="tel" id="phone-number" placeholder="phone number" class="form-control" name="phone-number"><br>
+        </div>
+
+        <div class="form-group">
+        <label for="Height">HEIGHT</label>
+        <input type="number" id="number-label" placeholder="Height" class="form-control" name="Height" min="1" max="35"><br>
+        </div>
+
+        <div class="form-group">
+        <label for="Graduation-Date">GRADUATION DATE</label>
+        <input type="date" 
+            id="date" placeholder="Date of Graduation" 
+            class="form-control" name="Graduation-Date">
+        </div>
+        
+        <div class="form-group">
+        <label for="Country">COUNTRY</label>     
+        <select name="Country" id="dropdown" class="form-control">
+            <option value=""></option>
+            <option value="">Estonia</option>
+            <option value="">Nigeria</option>
+        </select>
+        </div>
+        
+        <div class="form-group">
+        <p>What is(are) the school's Best Values?</p>
+        <label for="Integrity"><input type="checkbox" class="input-checkbox" id="Integrity" value="Integrity" name="value">
+            Integrity
+        </label><br>
+        <label for="Quality"><input type="checkbox" class="input-checkbox" id="Quality" value="Quality" name="value">
+            Quality
+        </label><br>
+        <label for="Accountability"><input type="checkbox" class="input-checkbox" id="Accountability" value="Accountability" name="value">
+            Accountability
+        </label><br>
+        </div>
+
+        <div class="form-group">
+        <p>Are You Satisfied with the Educational standards?</p>
+        <label for="Yes"><input type="radio" class="input-radio" id="Yes" value="Yes" name="Satisfied">
+            Yes
+        </label><br>
+        <label for="No"><input type="radio" class="input-radio" id="No" value="No" name="Satisfied">
+            No
+        </label><br>
+        <label for="Need some Improvements"><input type="radio" class="input-radio" value="Need some Improvements" id="Need some Improvements" name="Satisfied">
+            Need some Improvements
+        </label><br>
+        </div>
+
+        <div class="form-group">
+        <p> Comments</p>
+            
+            <textarea type="text" id="textarea" name="textarea"></textarea>
+        </div>
+        
+        <div class="form-group">
+        </label>
+        <input type="submit" id="submit" name="submit" value="SUBMIT">
+        </div>
+    </form>
+    </main>
+</body>
+</html>
